@@ -6,6 +6,9 @@ def calculate_structure_sum(data_structure):
     elif isinstance(data_structure, int):
        global sum_
        sum_ = sum_ + data_structure
+    elif isinstance(data_structure, float):
+
+       sum_ = sum_ + data_structure
 
     elif isinstance(data_structure, dict):
        sum_ = sum_ + sum(data_structure.values())
